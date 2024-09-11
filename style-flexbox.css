@@ -1,0 +1,36 @@
+body{
+    font-family: Arial, sans-serif;
+    background-color: rgba(143, 89, 89, 0.468);
+    margin: 0;
+    padding: 0;
+
+}
+
+.grid-gallery-container{
+      display: grid;
+      grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+      gap: 10px;
+      padding: 20px;
+      height: 400px;
+}
+
+.grid-gallery-item{
+    border: 2px ;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.grid-gallery-item img{
+    width: 300px;
+    height:auto;
+}
+
+.grid-gallery-container:hover .grid-gallery-item{
+    opacity: .5;
+}
+.grid-gallery-container .grid-gallery-item:hover {
+    opacity: 1
+}
+.grid-gallery-item:hover{
+    transform: translateY(-20px)
+}
